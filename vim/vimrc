@@ -28,8 +28,6 @@ set scrolloff=3         " Affiche un minimum de 3 lignes autour du curseur (pour
 " -- Recherche
 set ignorecase          " Ignore la casse lors d’une recherche
 set smartcase           " Si une recherche contient une majuscule, re-active la sensibilite a la casse
-set incsearch           " Surligne les resultats de recherche pendant la saisie
-set hlsearch            " Surligne les resultats de recherche
 
 " -- Beep
 set visualbell          " Empeche Vim de beeper
@@ -73,44 +71,3 @@ let mapleader = ","
 set tabstop=4
 set shiftwidth=4
 set expandtab
-
-" BÉPO CONFIG
-
-" Move next word
-noremap é w
-" Move next WORD
-noremap É W
- 
-" Move carret left
-noremap c h
-" Move carret right
-noremap r l
-" Move carret down
-noremap t j
-" Move carret up
-noremap s k
-" Move carret at the top of the screen
-noremap C H
-" Move carret at the bottom of the screen
-noremap R L
-" Join lines
-noremap T J
-" Run a program to lookup the keyword under the cursor
-noremap S K
-
-" Move to character before following typed character (unTill)
-noremap j t
-" Move to character before following typed character (unTill) backward
-noremap J T
-" Replace character under cursor
-noremap l r
-" Enter Replace mode
-noremap L R
-" Change text according to next motion command
-noremap h c
-" Change until end of the line
-noremap H C
-" Subtitute text according to next command
-noremap k s
-" Subtitute the whole line
-noremap K S
